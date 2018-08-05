@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from at4b.ru/services/crm-dlya-torgovly/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Aug 2018 06:37:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>CRM система для торговли: оптовой и розничной</title>
+<meta name="description" content="CRM для торговли, CRM система для розничной торговли">
+<meta name="keywords" content="Компания «АТ» предлагает внедрение CRM-системы для оптовой и розничной торговли по самой доступной цене.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="author" content="">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.html">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- /favicon -->
+
+<!-- Bootstrap core CSS -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../../css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Modal frame -->
+<div class="modal fade myModalPopap" id="myModalAuto" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <div class="tablinks">
+            <a id="tabCall" data-tab="scb_yes" class="tab-call " style="">
+                <span class="media"><span class="media-left">&nbsp;</span><span class="media-body">Заказать звонок</span></span>
+            </a>
+            <a id="tabMessage" data-tab="scb_mail" class="tab-message tab-message-active">
+                <span class="media"><span class="media-left">&nbsp;</span><span class="media-body">Отправить сообщение</span></span>
+            </a>
+        </div>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Автоматизировать продажи</h4>
+      </div>
+      <div class="modal-body" style="  ">
+        <div class="" id="divCall" style="display:none;">
+            <div class="" id="formcall">
+            <div id="scb_action_desc">
+                <div class="scb_radio">
+                                        <input id="scb_call_now" type="radio" name="gender" value="scb_call_now" checked="" style="">
+                    <label for="scb_call_now" style="">Перезвонить прямо сейчас </label>
+                                        <input id="scb_call_time" type="radio" name="gender" value="scb_call_time">
+                    <label for="scb_call_time">Перезвонить в указанное время:</label>
+                </div>
+            </div>
+            
+            <div id="scb_udobnoe_block" style="display: none; ">
+                <select class="form-control" id="phoneselectday" name="phoneselectday" style="width: 176px;">
+                                        <option value="today" selected >Сегодня, 01.08.2018</option>
+                    <option value="tomorrow" >Завтра, 02.08.2018</option>
+                                    </select>
+                <span>в</span>
+                  <select class="form-control" id="phoneselecttime" name="phoneselecttime" style="width: 70px;">
+                    <option value="09:00" class="show">09:00</option>
+                    <option value="09:15" class="show">09:15</option>
+                    <option value="09:30" class="show">09:30</option>
+                    <option value="09:45" class="show">09:45</option>
+                    <option value="10:00" class="show">10:00</option>
+                    <option value="10:15" class="show">10:15</option>
+                    <option value="10:30" class="show">10:30</option>
+                    <option value="10:45" class="show">10:45</option>
+                    <option value="11:00" class="show">11:00</option>
+                    <option value="11:15" class="show">11:15</option>
+                    <option value="11:30" class="show">11:30</option>
+                    <option value="11:45" class="show">11:45</option>
+                    <option value="12:00" class="show">12:00</option>
+                    <option value="12:15" class="show">12:15</option>
+                    <option value="12:30" class="show">12:30</option>
+                    <option value="12:45" class="show">12:45</option>
+                    <option value="13:00" class="show">13:00</option>
+                    <option value="13:15" class="show">13:15</option>
+                    <option value="13:30" class="show">13:30</option>
+                    <option value="13:45" class="show">13:45</option>
+                    <option value="14:00" class="show">14:00</option>
+                    <option value="14:15" class="show">14:15</option>
+                    <option value="14:30" class="show">14:30</option>
+                    <option value="14:45" class="show">14:45</option>
+                    <option value="15:00" class="show">15:00</option>
+                    <option value="15:15" class="show">15:15</option>
+                    <option value="15:30" class="show">15:30</option>
+                    <option value="15:45" class="show">15:45</option>
+                    <option value="16:00" class="show">16:00</option>
+                    <option value="16:15" class="show">16:15</option>
+                    <option value="16:30" class="show">16:30</option>
+                    <option value="16:45" class="show">16:45</option>
+                    <option value="17:00" class="show">17:00</option>
+                    <option value="17:15" class="show">17:15</option>
+                    <option value="17:30" class="show">17:30</option>
+                  </select>
+            </div>
+            
+            <div class="form-group phone">
+              <input type="text" class="form-control " name="phone" id="scb_phone_input" placeholder="Ваш телефон">
+            </div>
+            
+            
+            <div class="form-group agreement">
+              <label><input id="scb_agreement" name="agreement" value="1" checked="checked" type="checkbox"> Я прочитал и принимаю <a href="../../politika/index.html" title="Условия политики конфиденциальности" target="_blank"><b>Условия политики конфиденциальности</b></a></label>
+            </div>
+            
+            <div class="div-btn-enter">
+                <button class="btn btn-primary btn-submit" id="buttoncallme" >Позвоните мне</button>
+            </div>
+            </div>
+            <!--
+            <div class="" id="formcallres">
+                <div>Спасибо, нам важно Ваше мнение!</div>
+                <div>Наши операторы обязательно перезвонят Вам!</div>
+            </div>
+            -->
+    
+    
+            <script>
+
+            </script>
+            
+            
+            
+        </div>
+      
+        <div class="" id="divMessage">
+            <div class="form-amocrm">
+                <form method="post" action="https://at4b.ru/formamocrmsend.php" id="form-amocrm">
+                    <input type="hidden" name="titlemodal" value="АВТОМАТИЗИРОВАТЬ ПРОДАЖИ">
+                    <div class="form-group name">
+                      <label for="formamocrmname">Имя<span class="text-danger">*</span>:</label>
+                      <input type="text" class="form-control" name="name" id="formamocrmname">
+                    </div>
+                    <div class="form-group phone">
+                      <label for="formamocrmphone">Телефон<span class="text-danger">*</span>:</label>
+                      <input type="text" class="form-control" name="phone" id="formamocrmphone">
+                    </div>
+                    <div class="form-group email">
+                      <label for="formamocrmemail">E-mail:</label>
+                      <input type="text" class="form-control" name="email" id="formamocrmemail" data-inputmask="'alias': 'email'">
+                    </div>
+                    <p class="texttogglefullform">Вы можете заполнить <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">расширенную форму обратной связи</a> и мы в кратчайшие сроки предоставим Вам индивидуальное предложение и включим в него подарок от нашей компании.</p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="form-group">
+                          <label for="formamocrmemail">Название компании:</label>
+                          <input type="text" class="form-control" name="company" >
+                        </div>
+                        <div class="form-group">
+                          <label for="sfera">Сфера деятельности:</label>
+                          <select class="form-control" id="sfera" name="sfera">
+                            <option value="0">не выбрано</option>
+                            <option value="100">E-Commerce (розница/опт)</option>
+                            <option value="200">Недвижимость и строительство</option>
+                            <option value="300">Спорт/Красота (фитнес, йога, парикмахерская и т.п.)</option>
+                            <option value="400">Образование</option>
+                            <option value="500">Консалтинг/HR</option>
+                            <option value="600">Маркетинг/Реклама/PR/Event</option>
+                            <option value="700">Производство</option>
+                            <option value="800">Автобизнес</option>
+                            <option value="900">Медицина</option>
+                            <option value="1000">ИТ</option>
+                            <option value="1100">Другое (указать в примечании)</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="formamocrmemail">Примечание:</label>
+                          <textarea class="form-control" rows="3" name="sferanote" ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ordercount">Примерное количество заказов (потенциальных продаж) в месяц?:</label>
+                            <select class="form-control" id="ordercount" name="ordercount">
+                              <option value="0">не выбрано</option>
+                              <option value="1">от 1 до 10</option>
+                              <option value="11">от 11 до 30</option>
+                              <option value="31">от 31 до 50</option>
+                              <option value="51">от 51 до 100</option>
+                              <option value="101">более 100</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientscount">Примерное количество действующих клиентов (объем клиентской базы)?:</label>
+                            <select class="form-control" id="clientscount" name="clientscount">
+                              <option value="0">не выбрано</option>
+                              <option value="1">от 1 до 100</option>
+                              <option value="101">от 101 до 250</option>
+                              <option value="251">от 251 до 500</option>
+                              <option value="501">от 501 до 1000</option>
+                              <option value="1001">более 1000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="programm">В какую программу на данный момент заносится информация о клиентах и потенциальных продажах? :</label>
+                            <select class="form-control" id="programm" name="programm">
+                              <option value="0">не выбрано</option>
+                              <option value="1">В Excel/Google Docs (+ 1С)</option>
+                              <option value="2">CRM(+1С) (указать в примечании название CRM, если своя «самописная», то так и указать)</option>
+                              <option value="3">Только 1С</option>
+                              <option value="4">Ни в какой</option>
+                              <option value="5">Другое (указать в примечании)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="formamocrmemail">Примечание:</label>
+                          <textarea class="form-control" rows="3" name="programmnote" ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Основные цели автоматизации продаж? (примеры целей: Видеть всю историю общения менеджера с клиентами; Разграничить права доступа к клиентской базе; Видеть конверсию из заявок в продажи; Автоматически генерировать счета, договора и КП из CRM):</label>
+                            <textarea class="form-control" rows="3" name="target1" placeholder="Цель №1"></textarea>
+                            <textarea class="form-control" rows="3" name="target2" placeholder="Цель №2"></textarea>
+                            <textarea class="form-control" rows="3" name="target3" placeholder="Цель №3"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="formamocrmemail">Ваша роль в процессе автоматизации (или должность в компании):</label>
+                          <textarea class="form-control" rows="3" name="roleautomation" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group agreement">
+                      <label><input id="formamocrmphoneagreement" name="agreement" value="1" checked="checked" type="checkbox"> Я прочитал и принимаю <a href="../../politika/index.html" title="Условия политики конфиденциальности" target="_blank"><b>Условия политики конфиденциальности</b></a></label>
+                    </div>
+                    <p class="notice"><span class="text-danger">*</span> обязательное поле</p>
+                    <div class="div-btn-enter">
+                        <button class="btn btn-primary btn-submit" id="form-amocrmSubmit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal frame -->
+
+<!-- Modal Search -->
+<div class="modal fade myModalPopap" id="myModalSearch" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <form id="formSearch" method="GET" action="https://at4b.ru/search.html">
+
+          <div class="message">Введите слово для поиска</div>
+          <div class="input">
+            <input type="text" name="s" >
+          </div>
+          <div class="submit">
+            <button type="submit"><img src="../../i/formSearchButtonSubmit.png" alt="Поиск" /></button>
+          </div>
+          
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /Modal Search -->
+    <div class="wrapper">
+        <div class="content">
+            <!--content-->
+            <header id="header">
+  <div class="container-width-big">
+    <div class="container-width-big-left">
+      <div class="navbar-header"> <a class="navbar-brand" href="../../index.html">
+          <img src="../../i/logo.png" alt="AT – технологии автоматизации для бизнеса" />
+        </a> </div>
+    </div>
+    <div class="container-width-big-right">
+      <div class="header-right">
+        <button class="btn btn-search-quick" type="button" data-toggle="modal" data-target="#myModalSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <div class="cabinet-quick">
+        <button class="btn btn-auto" type="button" id="btn-auto-2" data-toggle="modal" data-target="#myModalAuto" data-title="Подобрать CRM">Подобрать CRM</button>
+        <div class="comagic_phone" style="font-size: 22px;">8 (800) 700-42-14</div>
+         </div> </div>
+    </div>
+    <div class="container-width-big-center container">
+      <div class="contacts">
+        <div class="comagic_phone1">
+          <span class="text comagic_phone"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:88007004214">8-800-700-42-14</a></span>
+        </div>
+        <div class="adress">
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i> 
+г. Москва, Багратионовский проезд, д.7, корп. 20В, 6-й этаж</span>
+        </div>
+        <div class="email">
+          <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:at@at4b.ru">at@at4b.ru</a></span>
+        </div>
+        <div class="time">
+          <span><i class="fa fa-clock-o" aria-hidden="true"></i> Режим работы: Пн - Пт: с 09:00 до 18:00</span>
+        </div>
+      </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar"> 
+        <!--
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                -->
+        <img src="../../i/ico-menu.png" alt="Меню" />
+        </button>
+        <button class="auth" type="button" data-toggle="modal" data-target="#myModalAuto" data-title="Автоматизировать продажи"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../i/logo.png" class="hidden-xs" alt="AT – технологии автоматизации для бизнеса"  />
+          <img src="../../i/logo-mini.png" class="visible-xs-block" alt="AT – технологии автоматизации для бизнеса"  />
+        </a> </div>
+      <div id="menu" class="navbar-collapse collapse">
+        <div class="nav navbar-nav navbar-right menu-top-right">
+          <div class="header-right">
+            <button class="btn btn-search-quick" type="button" data-toggle="modal" data-target="#myModalSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+             <span class="cabinet-quick hidden-xs">
+            <button class="btn btn-auto" type="button" id="btn-auto" data-toggle="modal" data-target="#myModalAuto" data-title="Подобрать CRM">Подобрать CRM</button>
+                         </span>  </div>
+        </div>
+        <div class="search-quick-mobile">
+          <form method="get" action="https://at4b.ru/search">
+            <div class="input-group">
+              <input type="text" name="s" class="form-control" placeholder="Найти">
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span> </div>
+            <!-- /input-group -->
+          </form>
+        </div>
+        
+<div id="navbar" class="navbar-collapse ">
+    <ul class="nav navbar-nav navbar-right">
+            <li class="">
+        <a href="../../about/index.html">
+          О компании
+                            </a>
+                    </li>
+            <li class=" dropdown-1293">
+        <a href="../../crm/index.html">
+          CRM
+                    <span class="btn dropdown-toggle" data-target=".dropdown-1293" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+          </span>
+                            </a>
+                                <ul class="dropdown-menu">
+                                <li class="">
+                    <a href="../../amocrm/index.html">AmoCRM</a>
+                </li>
+                                <li class="">
+                    <a href="../../vnedrenie-i-nastroyka-bitrix24/index.html">Битрикс24</a>
+                </li>
+                            </ul>
+                                </li>
+                      <li class="active dropdown-1271">
+        <a href="../index.html">
+          Отраслевые CRM
+                              <span class="btn dropdown-toggle" data-target=".dropdown-1271" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+          </span>
+                  </a>
+                                    <ul class="dropdown-menu" style="right: auto;">
+                <li>
+                    <div class="row" style="width: 600px;">
+                        <div class="col-md-6">
+                            <ul class="dropdown-menu">
+                                                                                                <li class="">
+                                    <a href="../crm-dlya-agentstva-nedvizhimosti/index.html">CRM для недвижимости</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-avtoservisa/index.html">CRM для автосервиса</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-internet-magazina/index.html">CRM для интернет-магазина</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-malogo-biznesa/index.html">CRM для малого бизнеса</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-optovoj-torgovli/index.html">CRM для оптовой торговли</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-otdela-prodazh/index.html">CRM для отдела продаж</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-salona-krasoty/index.html">CRM для салона красоты</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-reklamnogo-agentstva/index.html">CRM для рекламного агентства</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-stomatologii/index.html">CRM для стоматологии</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-proizvodstva/index.html">CRM для производства</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-klinik/index.html">CRM для клиник</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-kofejni/index.html">CRM для кофейни</a>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="dropdown-menu">
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-lendinga/index.html">CRM для лендинга</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-logistiki/index.html">CRM для транспортных компаний</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-fitnesa/index.html">CRM для фитнес клуба</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-roznichnogo-magazina/index.html">CRM для розничного магазина</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-shkoly-tancev/index.html">CRM для школы танцев</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-sklada/index.html">CRM для склада</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-call-tsentra/index.html">CRM для call-центра</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-stroitelnykh-kompanij/index.html">CRM для строительных компаний</a>
+                                </li>
+                                                                                                                                <li class="active">
+                                    <a href="index.html">CRM для торговли</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-turagentstva/index.html">CRM для турагентства</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-yazykovoj-shkoly/index.html">CRM для языковых школ</a>
+                                </li>
+                                                                                                                                <li class="">
+                                    <a href="../crm-dlya-yuridicheskoy-kompanii/index.html">CRM для юридической компании</a>
+                                </li>
+                                                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </li>
+            <li class=" dropdown-1273">
+        <a href="../../funktsii-crm/index.html">
+          Функции CRM
+                    <span class="btn dropdown-toggle" data-target=".dropdown-1273" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+          </span>
+                            </a>
+                                <ul class="dropdown-menu">
+                                <li class="">
+                    <a href="../../avtomatizaciya-v-crm/index.html">Автоматизация бизнеса с CRM</a>
+                </li>
+                                <li class="">
+                    <a href="../../integratsiya-crm/index.html">Базовые интеграции CRM</a>
+                </li>
+                                <li class="">
+                    <a href="../../integratsiya-telefonii-s-crm/index.html">Интеграция CRM с телефонией</a>
+                </li>
+                            </ul>
+                                </li>
+            <li class="">
+        <a href="../../price/index.html">
+          Цены
+                            </a>
+                    </li>
+            <li class="">
+        <a href="../../reviews/index.html">
+          Отзывы
+                            </a>
+                    </li>
+            <li class="">
+        <a href="../../parthers/index.html">
+          Партнеры
+                            </a>
+                    </li>
+            <li class="">
+        <a href="../../contacts/index.html">
+          Контакты
+                            </a>
+                    </li>
+    </ul>
+</div><!--/.nav-collapse --> </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</header>
+            <div class="block-content">
+                    <div class="uslugi-content">
+  <div class="rasdel-title">
+    <div class="container">
+      <div class="back"><a href="../index.html"><span class="ico">
+          <img src="../../i/ico-back.png">
+          </span> <span class="text">Назад</span></a></div>
+      <h1 class="margin-0">
+                  CRM для торговли
+        </h1></div>
+    </div>
+  </div>
+  <div class="wrap1 service-page service-28">
+    <div class="wrap1-left"></div>
+        <div class="wrap1-center">
+      <div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p>Привлечение покупателей в офлайн- или интернет-магазины в условиях конкуренции &ndash; сложная задача, для решения которой приходится искать новые, более эффективные, методы. Профессиональная CRM-система для розничной торговли, внедренная компетентными специалистами AT, поможет повысить лояльность целевой аудитории, обеспечить рост прибыли и снижение издержек. По оценкам экспертов, грамотная автоматизация увеличивает продажи на 3&ndash;10 %.</p>
+
+<h2>Основные функции CRM в розничной торговле</h2>
+
+<p>Использование CRM в рознице упрощает необходимые для организации успешной торговли рабочие процессы. В ней осуществляются:</p>
+
+<ul>
+	<li>хранение информации;</li>
+	<li>оформление документации;</li>
+	<li>составление и ведение клиентской базы;</li>
+	<li>сбор статистических данных;</li>
+	<li>распределение текущих заданий;</li>
+	<li>контроль качества исполнения;</li>
+	<li>отслеживание истории договоров.</li>
+</ul>
+
+<h2>Дополнительные функции CRM в рознице</h2>
+
+<p>Гибкая платформа рассчитана на свободный подбор опций, требуемых для отдела продаж. Интеграция с IP-телефонией, e-mail, интернет-магазином увеличивает количество заявок. Добавление платежных сервисов повышает лояльность. Объединение с программами управления складом обеспечивает отсутствие сбоев и актуальность информации о складских запасах.</p>
+
+<p>Путем грамотной настройки при внедрении CRM-системы в розничную торговлю легко распределить права сотрудников, сегментировать покупателей по категориям, оценить спрос на конкретные товары, разработать стратегию маркетинга и программу индивидуальных скидок.</p>
+
+<h2>Как выбирать CRM для розничной торговли?</h2>
+
+<p>Для розницы можно использовать коробочные и облачные системы. В первом случае СРМ функционирует в корпоративной сети через приложения. При использовании виртуальных платформ информация размещается и хранится на удаленном защищенном сервере, что повышает удобство использования. При настройках свободного доступа к облачному хранилищу можно обращаться с любого мобильного телефона или десктопа при наличии подключения к интернету. При выборе CRM для розничной торговли оцените полноту функционала, стоимость услуг по внедрению и возможность корректировки работы под ваш бизнес.</p>
+
+<h2>Преимущества внедрения CRM-системы</h2>
+
+<p>Автоматизированный комплекс поможет повысить доходы от розничных продаж с минимальными вложениями, сократит трудозатраты, выявит проблемные зоны и недостаток компетенций уже через пару месяцев после запуска. Отлаженные скрипты, регистрация всех обращений, ведение подробнейшей клиентской базы, составление отчетов за секунды, корректная статистика по продажам на каждый момент времени &ndash; все это нацелено на увеличение вашего дохода и сокращение издержек.</p>
+
+<p>Для расчета стоимости внедрения с учетом специфики вашей отрасли достаточно связаться с нами по указанным контактам. Заказывая систему автоматического учета, вы заботитесь о будущем своего бизнеса.</p>
+</div>
+</div>
+</div>
+
+    </div>
+        <div class="wrap1-center container">
+      <div class="item item-view ">
+                <div class="view"></div>
+      </div>
+
+    </div>
+    <div class="wrap1-center form-wrap">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-lg-10">
+  <div class="" id="serviceForm">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-2">
+      <div class="h2 title">Помощь и 14 дней бесплатно</div>
+      <div class="form-services">
+        <form method="post" action="https://at4b.ru/formservicesend.php" id="form-services">
+          <input type="hidden" name="titlemodal" value="Помощь и 14 дней бесплатно">
+          <div class="form-group name">
+            <label for="formservicename">Имя<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="name" id="formservicename">
+          </div>
+          <div class="form-group phone">
+            <label for="formservicephone">Телефон<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="phone" id="formservicephone">
+          </div>
+          <div class="form-group email">
+            <label for="formserviceemail">E-mail</label>
+            <input type="text" class="form-control" name="email" id="formserviceemail" data-inputmask="'alias': 'email'">
+          </div>
+          <p class="notice"><span class="text-danger">*</span> обязательное поле</p>
+          <div class="form-group div-btn-enter">
+            <button class="btn btn-block btn-lg btn-warning btn-submit" id="form-serviceSubmit">Попробовать бесплатно</button>
+          </div>
+          <div class="form-group agreement">
+            <label>
+              <input id="formserviceagreement" name="agreement" value="1" checked="checked" type="checkbox">
+              Я прочитал и принимаю <a href="../../politika/index.html" title="Условия политики конфиденциальности" target="_blank">Условия политики конфиденциальности</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+</div>      </div>
+    </div>
+    <div class="wrap1-right"></div>
+    <div class="clearfix"></div>
+  </div>
+</div>              </div>
+            <div class="clearfix"></div>
+        </div><!-- /.content -->
+        
+        <footer id="footer">
+    
+  <script type="text/javascript">
+var ff34 = 
+'<div class="form-call">'+
+'    <div class="container">'+
+'        <div class="text">Свяжитесь с нами сейчас, получите бесплатную консультацию и демонстрацию всех возможностей.</div>'+
+'        <div class="row">'+
+'            <form method="POST" action="/ajax.php" id="form-call-footer">'+
+'                <input type="hidden" name="template" value="db_contacts/send-feedback">'+
+'                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">'+
+'                    <div class="form-group name">'+
+'                        <input type="text" name="name" class="form-control" placeholder="Ваше имя" id="form-call-name">'+
+'                    </div>'+
+'                </div>'+
+'                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">'+
+'                    <div class="form-group phone">'+
+'                        <input type="text" name="phone" class="form-control" placeholder="Телефон" id="form-call-phone">'+
+'                    </div>'+
+'                </div>'+
+'                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">'+
+'                    <div class="form-group email">'+
+'                        <input type="email" name="email" class="form-control" placeholder="E-mail" id="form-call-email" >'+
+'                    </div>'+
+'                </div>'+
+'                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">'+
+'                    <div class="form-group agreement">'+
+'                        <button type="submit" class="btn">Получить консультацию</button>'+
+'                    </div>'+
+'                </div>'+
+'                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-lg-offset-7 col-md-offset-6 col-sm-offset-4">'+
+'                    <div class="form-group agreement">'+
+'                        <label><input id="form-call-agreement" name="agreement" value="1" checked="checked" type="checkbox"> Я прочитал и принимаю <a href="/politika/" title="Условия политики конфиденциальности" target="_blank"><b>Условия политики конфиденциальности</b></a></label>'+
+'                    </div>'+
+'                </div>'+
+'            </form>'+
+'        </div>'+
+'    </div>'+
+'</div>';
+document.write(ff34);
+</script>  <div class="socio">
+    <div class="container-width-big">
+      <div class="socio-left">
+        <div class="copyright">&copy; 2018 AT – технологии автоматизации для бизнеса.<br>Все права защищены.</div>
+        <div class="social-links">
+          <span class="icons">                         <span class="item vk"> <span class="fa-stack fa-lg"><a href="https://vk.com/at4bru" target="_blank" rel="nofollow"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-vk fa-stack-1x fa-inverse"></i> </a></span> </span>
+                        <span class="item facebook"> <span class="fa-stack fa-lg"><a href="https://www.facebook.com/at4bru/" target="_blank" rel="nofollow"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </a></span> </span>
+                      </span>
+        </div>
+      </div>
+            <div class="socio-center">
+        
+<div class="menu-bottom">
+    <ul>
+        <li class=""><a href="../../about/index.html">О компании</a></li>
+        <li class="active"><a href="../index.html">Отраслевые CRM</a></li>
+        <li class=""><a href="../../funktsii-crm/index.html">Функции CRM</a></li>
+        <li class=""><a href="../../price/index.html">Цены</a></li>
+        <li class=""><a href="../../reviews/index.html">Отзывы</a></li>
+        <li class=""><a href="../../parthers/index.html">Партнеры</a></li>
+        <li class=""><a href="../../contacts/index.html">Контакты</a></li>
+        <li class=""><a href="../../karta-sayta/index.html">Карта сайта</a></li>
+        <li class=""><a href="../../politika/index.html">Политика конфиденциальности</a></li>
+        <li class=""><a href="../../articles/index.html">Статьи</a></li>
+    </ul>
+</div>
+      </div>
+      <div class="socio-right">
+         <div class="adress">
+          <span>
+г. Москва, Багратионовский проезд, д.7, корп. 20В, 6-й этаж</span>
+        </div>
+        <div class="email">
+          <span><a href="mailto:at@at4b.ru">at@at4b.ru</a></span>
+        </div>
+        <div class="comagic_phone1">
+          <span class="text comagic_phone"><a href="tel:88007004214">8-800-700-42-14</a></span>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="counters">
+&nbsp;<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-88109861-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+&nbsp;<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41197489 = new Ya.Metrika({ id:41197489, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "../../../mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41197489" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+&nbsp;<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "2841204", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="http://top-fwz1.mail.ru/counter?id=2841204;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+&nbsp;<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=LAuz7MbHScc9E0e5BNYCf315AtN6Z*5x8FxftLgEaZZrAXH6LprkWA6UgcYvXcSA4UWsQiVYO5qLy5DFCYIfXOS0TGLSoJAALsytBFBAJUb/SRmbibo/AgtfnNb7h5JkBRL6xa4yrXiBiMyzN0Opihrsy/cCa3p6o6eOdVTvMQo-&pixel_id=1000050456';</script>
+&nbsp;<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','../../../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '430706533984643');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=430706533984643&amp;ev=PageView&amp;noscript=1" alt="Facebook Pixel Code"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+&nbsp;<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPFPJVL');</script>
+<!-- End Google Tag Manager -->
+</div></footer>
+    </div><!-- .wrapper -->
+
+<link href="../../css/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="../../css/jasny-bootstrap.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="../../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="../../js/jquery.min.html"><\/script>')</script> 
+<script src="../../js/jquery-migrate-git.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../../js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="../../js/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../js/jquery.fancybox/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="../../js/jquery.fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="../../js/jquery.fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script src="../../js/main.js"></script>
+<script type="text/javascript">
+var __cs = __cs || [];
+__cs.push(["setCsAccount", "etQBkgYGGaCgELDn6A4MfSwgdhUWgzny"]);
+__cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
+</script>
+<script type="text/javascript" async src="../../../app.comagic.ru/static/cs.min.js"></script>
+</body>
+
+<!-- Mirrored from at4b.ru/services/crm-dlya-torgovly/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Aug 2018 06:37:31 GMT -->
+</html>

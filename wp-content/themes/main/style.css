@@ -1,0 +1,9 @@
+.navbar-collapse,
+.nav.navbar-nav .btn-search-quick,
+.navbar-toggle {
+    display: none;
+}
+
+.socio-center {
+    visibility: hidden;
+}
