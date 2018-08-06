@@ -9,42 +9,42 @@ get_header();
         <div class="contacts-content">
             <div class="rasdel-title">
                 <div class="container">
-                    <div class="back"><a href="#"><span class="ico"><img src="../i/ico-back.png"></span> <span
+                    <div class="back"><a href="/"><span class="ico"><img src="<?= get_template_directory_uri(); ?>/i/ico-back.png"></span> <span
                                     class="text">Назад</span></a></div>
-                    <h1 class="margin-0">Контакты</h1></div>
+                    <h1 class="margin-0"><?php the_title(); ?></h1></div>
             </div>
             <div class="cont">
                 <div class="container" id="divover">
                     <div class="row row1">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="h">Адрес:</div>
+                            <div class="h"><?php the_field('string_1_left'); ?></div>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <div class="t">г. Москва, Багратионовский проезд, д.7, корп. 20В, 6-й этаж</div>
+                            <div class="t"><?php the_field('string_1_right'); ?></div>
                         </div>
                     </div>
                     <div class="row row2 row-phone">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="h">Телефон:</div>
+                            <div class="h"><?php the_field('string_2_left'); ?></div>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <div class="t comagic_phone">8-800-700-42-14</div>
+                            <div class="t comagic_phone"><?php the_field('string_2_right'); ?></div>
                         </div>
                     </div>
                     <div class="row row3 row-email">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="h">E-mail:</div>
+                            <div class="h"><?php the_field('string_3_left'); ?></div>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <div class="t">at@at4b.ru</div>
+                            <div class="t"><?php the_field('string_3_right'); ?></div>
                         </div>
                     </div>
                     <div class="row row4 row-time">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="h">Время работы:</div>
+                            <div class="h"><?php the_field('string_4_left'); ?></div>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <div class="t">Пн - Пт: с 09:00 до 18:00</div>
+                            <div class="t"><?php the_field('string_4_right'); ?></div>
                         </div>
                     </div>
                     <div class="row row5 row-feedback">
@@ -230,7 +230,7 @@ get_header();
                 }
 
                 //var myLatlng1 = new google.maps.LatLng(55.745006, 37.505508);
-                var myLatlng1 = new google.maps.LatLng(55.744007, 37.5042065);
+                var myLatlng1 = new google.maps.LatLng(<?php the_field('coords'); ?>);
                 var mapOptions1 = {
                     zoom: zoom,
                     center: myLatlng1,
@@ -239,16 +239,16 @@ get_header();
                 var map1 = new google.maps.Map(document.getElementById('map'), mapOptions1);
 
                 var image = new google.maps.MarkerImage(
-                    '../i/contacts-map-icon.png',
+                    '<?= get_template_directory_uri(); ?>/i/contacts-map-icon.png',
                     new google.maps.Size(65, 66),
                     new google.maps.Point(0, 0),
                     new google.maps.Point(65, 66)
                 );
 
                 var marker1 = new google.maps.Marker({
-                    position: new google.maps.LatLng(55.743007, 37.5042065),
+                    position: new google.maps.LatLng(<?php the_field('coords'); ?>),
                     map: map1,
-                    title: 'г. Москва, Багратионовский проезд, д.7, корп. 20В, 6-й этаж',
+                    title: '<?php the_field('string_1_right'); ?>',
                     icon: image,
                     draggable: false
                 });
