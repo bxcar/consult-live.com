@@ -7,30 +7,23 @@ get_header();
 ?>
     <div class="block-content">
         <div class="features-content">
-            <div class="rasdel-title"><div class="container"><div class="back"><a href="#"><span class="ico"><img src="../i/ico-back.png"></span> <span class="text">Назад</span></a></div><h1 class="margin-0">Функции CRM систем</h1></div></div>
+            <div class="rasdel-title"><div class="container"><div class="back"><a href="/"><span class="ico"><img src="<?= get_template_directory_uri(); ?>/i/ico-back.png"></span> <span class="text">Назад</span></a></div><h1 class="margin-0"><?php the_title(); ?></h1></div></div>
             <div class="wrap1">
                 <div class="wrap1-left"></div>
                 <div class="wrap1-center container">
                     <div class="items">
                         <div class="row">
-                            <div class="item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                <div class="box box1">
-                                    <div class="number">01</div>
-                                    <div class="text">Мы подберем для Вас нужную платформу и присоединим к ней все необходимые Вашему бизнесу инструменты.</div>
-                                </div>
-                            </div>
-                            <div class="item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                <div class="box box2">
-                                    <div class="number">02</div>
-                                    <div class="text">Каждое обращение Клиента будет зарегистрировано автоматически и попадет в Вашу цифровую воронку продаж!</div>
-                                </div>
-                            </div>
-                            <div class="item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                <div class="box box3">
-                                    <div class="number">03</div>
-                                    <div class="text">Потенциальная сделка, будет двигаться по этапам воронки и подсказывать менеджерам о необходимости совершения следующих шагов.</div>
-                                </div>
-                            </div>
+                            <?php
+                            if(get_field('functions_crm')) {
+                                foreach (get_field('functions_crm') as $item) { ?>
+                                    <div class="item col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="box box1" style="background: url(<?= $item['img']; ?>) left top repeat #1d2fb9;">
+                                            <div class="number"><?= $item['title']; ?></div>
+                                            <div class="text"><?= $item['desc']; ?></div>
+                                        </div>
+                                    </div>
+                                <?php }
+                            }?>
                         </div>
                     </div>
                 </div>
@@ -52,7 +45,7 @@ get_header();
                             <div class="line"></div><div class="circle"></div>
                             <div class="number">
                                 01
-                                <div class="ico"><img src="../i/features-ico-ribbon.png"></div>
+                                <div class="ico"><img src="<?= get_template_directory_uri(); ?>/i/features-ico-ribbon.png"></div>
                             </div>
                             <div class="text">Принимает и обрабатывает заявки клиентов, собирая данные с ваших </div>
                             <div class="punkts">
@@ -70,7 +63,7 @@ get_header();
                             <div class="line"></div><div class="circle"></div>
                             <div class="number">
                                 02
-                                <div class="ico"><img src="../i/features-ico-bullhorn.png"></div>
+                                <div class="ico"><img src="<?= get_template_directory_uri(); ?>/i/features-ico-bullhorn.png"></div>
                             </div>
                             <div class="text">Подсказывает менеджерам как построить беседу с помощью всплывающих скриптов продаж</div>
                         </div>
@@ -79,7 +72,7 @@ get_header();
                             <div class="line"></div><div class="circle"></div>
                             <div class="number">
                                 03
-                                <div class="ico"><img src="../i/features-ico-new_post.png"></div>
+                                <div class="ico"><img src="<?= get_template_directory_uri(); ?>/i/features-ico-new_post.png"></div>
                             </div>
                             <div class="text">Ставит задачи соответствующим подразделениям, будь то складской работник или замерщик</div>
                         </div>
@@ -88,7 +81,7 @@ get_header();
                             <div class="line"></div><div class="circle"></div>
                             <div class="number">
                                 04
-                                <div class="ico"><img src="../i/features-ico-bell.png"></div>
+                                <div class="ico"><img src="<?= get_template_directory_uri(); ?>/i/features-ico-bell.png"></div>
                             </div>
                             <div class="text">Оповещает клиентов и сотрудников о прохождении ключевых стадий при помощи:</div>
                             <div class="punkts">
@@ -104,7 +97,7 @@ get_header();
                             <div class="line"></div><div class="circle"></div>
                             <div class="number">
                                 05
-                                <div class="ico"><img src="../i/features-ico-document.png"></div>
+                                <div class="ico"><img src="<?= get_template_directory_uri(); ?>/i/features-ico-document.png"></div>
                             </div>
                             <div class="text">Генерирует необходимые документы и при необходимости запускает процесс их согласования</div>
                         </div>
