@@ -183,3 +183,5 @@ if (function_exists('acf_add_options_page')) {
         'parent_slug' => 'theme-general-settings',
     ));
 }
+
+remove_filter ('acf_the_content', 'wpautop');
