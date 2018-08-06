@@ -14,7 +14,7 @@ get_header();
         <div class="about-content">
             <div class="rasdel-title">
                 <div class="container">
-                    <div class="back"><a href="#"><span class="ico"><img src="<?= get_template_directory_uri();?>/i/ico-back.png"></span> <span
+                    <div class="back"><a href="/"><span class="ico"><img src="<?= get_template_directory_uri();?>/i/ico-back.png"></span> <span
                                     class="text">Назад</span></a></div>
                     <h1 class="margin-0"><?php the_title(); ?></h1></div>
             </div>
