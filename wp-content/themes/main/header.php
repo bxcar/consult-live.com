@@ -188,12 +188,12 @@
                                 <input type="text" class="form-control" name="email" id="formamocrmemail"
                                        data-inputmask="'alias': 'email'">
                             </div>
-                            <!--<p class="texttogglefullform">Вы можете заполнить <a role="button" data-toggle="collapse"
+                            <p class="texttogglefullform">Вы можете заполнить <a role="button" data-toggle="collapse"
                                                                                  href="#collapseExample"
                                                                                  aria-expanded="false"
                                                                                  aria-controls="collapseExample">расширенную
                                     форму обратной связи</a> и мы в кратчайшие сроки предоставим Вам индивидуальное
-                                предложение и включим в него подарок от нашей компании.</p>-->
+                                предложение и включим в него подарок от нашей компании.</p>
                             <div class="collapse" id="collapseExample">
                                 <div class="form-group">
                                     <label for="formamocrmemail">Название компании:</label>
@@ -203,17 +203,17 @@
                                     <label for="sfera">Сфера деятельности:</label>
                                     <select class="form-control" id="sfera" name="sfera">
                                         <option value="0">не выбрано</option>
-                                        <option value="100">E-Commerce (розница/опт)</option>
+                                        <option value="E-Commerce (розница/опт)">E-Commerce (розница/опт)</option>
                                         <option value="200">Недвижимость и строительство</option>
-                                        <option value="300">Спорт/Красота (фитнес, йога, парикмахерская и т.п.)</option>
-                                        <option value="400">Образование</option>
-                                        <option value="500">Консалтинг/HR</option>
-                                        <option value="600">Маркетинг/Реклама/PR/Event</option>
-                                        <option value="700">Производство</option>
-                                        <option value="800">Автобизнес</option>
-                                        <option value="900">Медицина</option>
-                                        <option value="1000">ИТ</option>
-                                        <option value="1100">Другое (указать в примечании)</option>
+                                        <option value="Недвижимость и строительство">Спорт/Красота (фитнес, йога, парикмахерская и т.п.)</option>
+                                        <option value="Образование">Образование</option>
+                                        <option value="Консалтинг/HR">Консалтинг/HR</option>
+                                        <option value="Маркетинг/Реклама/PR/Event">Маркетинг/Реклама/PR/Event</option>
+                                        <option value="Производство">Производство</option>
+                                        <option value="Автобизнес">Автобизнес</option>
+                                        <option value="Медицина">Медицина</option>
+                                        <option value="ИТ">ИТ</option>
+                                        <option value="Другое (указать в примечании)">Другое (указать в примечании)</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -225,11 +225,11 @@
                                         месяц?:</label>
                                     <select class="form-control" id="ordercount" name="ordercount">
                                         <option value="0">не выбрано</option>
-                                        <option value="1">от 1 до 10</option>
-                                        <option value="11">от 11 до 30</option>
-                                        <option value="31">от 31 до 50</option>
-                                        <option value="51">от 51 до 100</option>
-                                        <option value="101">более 100</option>
+                                        <option value="от 1 до 1">от 1 до 10</option>
+                                        <option value="от 11 до 30">от 11 до 30</option>
+                                        <option value="от 31 до 50">от 31 до 50</option>
+                                        <option value="от 51 до 100">от 51 до 100</option>
+                                        <option value="более 100">более 100</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -237,11 +237,11 @@
                                         клиентской базы)?:</label>
                                     <select class="form-control" id="clientscount" name="clientscount">
                                         <option value="0">не выбрано</option>
-                                        <option value="1">от 1 до 100</option>
-                                        <option value="101">от 101 до 250</option>
-                                        <option value="251">от 251 до 500</option>
-                                        <option value="501">от 501 до 1000</option>
-                                        <option value="1001">более 1000</option>
+                                        <option value="от 1 до 100">от 1 до 100</option>
+                                        <option value="от 101 до 250">от 101 до 250</option>
+                                        <option value="от 251 до 500">от 251 до 500</option>
+                                        <option value="от 501 до 1000">от 501 до 1000</option>
+                                        <option value="более 1000">более 1000</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -249,13 +249,14 @@
                                         клиентах и потенциальных продажах? :</label>
                                     <select class="form-control" id="programm" name="programm">
                                         <option value="0">не выбрано</option>
-                                        <option value="1">В Excel/Google Docs (+ 1С)</option>
-                                        <option value="2">CRM(+1С) (указать в примечании название CRM, если своя
+                                        <option value="В Excel/Google Docs (+ 1С)">В Excel/Google Docs (+ 1С)</option>
+                                        <option value="CRM(+1С) (указать в примечании название CRM, если своя
+                                            «самописная», то так и указать)">CRM(+1С) (указать в примечании название CRM, если своя
                                             «самописная», то так и указать)
                                         </option>
-                                        <option value="3">Только 1С</option>
-                                        <option value="4">Ни в какой</option>
-                                        <option value="5">Другое (указать в примечании)</option>
+                                        <option value="Только 1С">Только 1С</option>
+                                        <option value="Ни в какой">Ни в какой</option>
+                                        <option value="Другое (указать в примечании)">Другое (указать в примечании)</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -281,13 +282,13 @@
                                               placeholder=""></textarea>
                                 </div>
                             </div>
-                            <!--<div class="form-group agreement">
-                                <label><input id="formamocrmphoneagreement" name="agreement" value="1" checked="checked"
-                                              type="checkbox"> Я прочитал и принимаю <a href="politika/index.html"
+                            <div class="form-group agreement">
+                                <label><input required id="formamocrmphoneagreement" name="agreement" value="1" checked="checked"
+                                              type="checkbox"> Я прочитал и принимаю <a href="<?= get_permalink(291)?>"
                                                                                         title="Условия политики конфиденциальности"
                                                                                         target="_blank"><b>Условия
                                             политики конфиденциальности</b></a></label>
-                            </div>-->
+                            </div>
                             <p class="notice"><span class="text-danger">*</span> обязательное поле</p>
                             <div class="div-btn-enter">
                                 <input type="submit" class="btn btn-primary btn-submit" id="form-amocrmSubmit-1" value="Отправить">

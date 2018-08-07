@@ -41,9 +41,9 @@
             '                        <input id="footer-form-submit" type="submit" class="btn" value="Получить консультацию">' +
             '                    </div>' +
             '                </div>' +
-            '                <div style="display: none;" class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-lg-offset-7 col-md-offset-6 col-sm-offset-4">' +
+            '                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-lg-offset-7 col-md-offset-6 col-sm-offset-4">' +
             '                    <div class="form-group agreement">' +
-            '                        <label><input id="form-call-agreement" name="agreement" value="1" checked="checked" type="checkbox"> Я прочитал и принимаю <a href="/politika/" title="Условия политики конфиденциальности" target="_blank"><b>Условия политики конфиденциальности</b></a></label>' +
+            '                        <label><input required id="form-call-agreement" name="agreement" value="1" checked="checked" type="checkbox"> Я прочитал и принимаю <a href="<?= get_permalink(291)?>" title="Условия политики конфиденциальности" target="_blank"><b>Условия политики конфиденциальности</b></a></label>' +
             '                    </div>' +
             '                </div>' +
             '            </form>' +

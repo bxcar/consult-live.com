@@ -130,6 +130,8 @@ s<script>
     // this is the id of the form
     jQuery("#form-call-footer").submit(function (e) {
 
+        e.preventDefault();
+
         jQuery("#footer-form-submit").attr("value", "Идет отправка...");
         jQuery("#footer-form-submit").css(
             {

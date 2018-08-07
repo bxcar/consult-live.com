@@ -23,16 +23,16 @@ $(document).ready(function () {
     yaCounter41197489.reachGoal('avtomatizirovat');
     return true;
   });
-  $('#form-amocrmSubmit').on('click', function () {
+  /*$('#form-amocrmSubmit').on('click', function () {
     ga('send', 'event', 'ok', 'main');
     yaCounter41197489.reachGoal('avtomatizirovat_otpavit_soobshenie');
     return true;
-  });
-  $('#form-call-footer .agreement button').on('click', function () {
+  });*/
+  /*$('#form-call-footer .agreement button').on('click', function () {
     ga('send', 'event', 'ok', 'footer');
     yaCounter41197489.reachGoal('poluchit_konsultaciu');
     return true;
-  });
+  });*/
   $('.sliders-main .videobox a, .slider-main2 .video a, .sliders-main-v3 .videobox a').fancybox({
     'transitionIn': 'none',
     'transitionOut': 'none',
@@ -124,7 +124,7 @@ $(document).ready(function () {
     if (97 <= ew && ew <= 122) return true;
     return false;
   });
-  $('#form-call-footer').submit(function (e) {
+  /*$('#form-call-footer').submit(function (e) {
     e.preventDefault();
     var error = false;
     var popoverTimeShow = 3000;
@@ -163,7 +163,7 @@ $(document).ready(function () {
         $('#form-call-phone').popover('destroy');
       }, popoverTimeShow);
     }
-    /* if ($('#form-call-email').val() == '') {
+     if ($('#form-call-email').val() == '') {
       $('#form-call-footer .email').addClass('has-error');
       error = true;
       $('#form-call-email').popover({
@@ -173,7 +173,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#form-call-email').popover('destroy');
       }, popoverTimeShow);
-    } */
+    }
     if (!isValidEmailAddress($('#form-call-email').val()) && $('#form-call-email').val() != '') {
       $('#form-call-footer .email').addClass('has-error');
       error = true;
@@ -229,7 +229,7 @@ $(document).ready(function () {
         yaCounter41197489.reachGoal('poluchit_konsultaciu_uspeshno');
       });
     }
-  })
+  })*/
   $('#form-amocrm').submit(function (e) {
     e.preventDefault();
     var error = false;
