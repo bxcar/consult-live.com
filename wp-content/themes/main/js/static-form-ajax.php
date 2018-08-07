@@ -1,4 +1,4 @@
-<script>
+s<script>
     // this is the id of the form
     jQuery("#formcall-form").submit(function (e) {
 
@@ -23,7 +23,7 @@
                     jQuery("#buttoncallme-1").attr("value", "Успешно отправлено");
                     jQuery("#buttoncallme-1").css({"background-image": "none"});
 
-                    jQuery('#static-form')[0].reset();
+                    jQuery('#formcall-form')[0].reset();
 
                     setTimeout(func, 10000);
 
@@ -87,7 +87,7 @@
                     jQuery("#form-amocrmSubmit-1").attr("value", "Успешно отправлено");
                     jQuery("#form-amocrmSubmit-1").css({"background-image": "none"});
 
-                    jQuery('#static-form')[0].reset();
+                    jQuery('#form-amocrm')[0].reset();
 
                     setTimeout(func, 10000);
 
@@ -151,7 +151,7 @@
                     jQuery("#footer-form-submit").attr("value", "Успешно отправлено");
                     jQuery("#footer-form-submit").css({"background-image": "none"});
 
-                    jQuery('#static-form')[0].reset();
+                    jQuery('#form-call-footer')[0].reset();
 
                     setTimeout(func, 10000);
 
@@ -184,6 +184,70 @@
                 function func() {
                     jQuery("#footer-form-submit").attr("value", "Отправить");
                     jQuery("#footer-form-submit").css({"background-image": "none"});
+                }
+            }
+        });
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+
+    // this is the id of the form
+    jQuery("#form-services").submit(function (e) {
+
+        jQuery("#form-serviceSubmit").attr("value", "Идет отправка...");
+        jQuery("#form-serviceSubmit").css(
+            {
+                "background-image": "url(<?= get_template_directory_uri()?>/img/loader-form.gif)",
+                "background-size": "15%",
+                "background-repeat": "no-repeat",
+                "background-position-y": "50%",
+                "background-position-x": "50%"
+            }
+        );
+        var url = "<?= get_template_directory_uri()?>/sendemail.php"; // the script where you handle the form input.
+
+        jQuery.ajax({
+            type: "POST",
+            url: url,
+            data: jQuery("#form-services").serialize(), // serializes the form's elements.
+            success: function (data) {
+                if (data == 1) {
+                    jQuery("#form-serviceSubmit").attr("value", "Успешно отправлено");
+                    jQuery("#form-serviceSubmit").css({"background-image": "none"});
+
+                    jQuery('#form-services')[0].reset();
+
+                    setTimeout(func, 10000);
+
+                    function func() {
+                        jQuery("#form-serviceSubmit").attr("value", "Отправить");
+                        jQuery("#form-serviceSubmit").css({"background-image": "none"});
+                    }
+                }
+
+                else {
+                    jQuery("#form-serviceSubmit").attr("value", "Произошла ошибка");
+                    jQuery("#form-serviceSubmit").css({"background-image": "none"});
+
+                    setTimeout(func, 3000);
+
+                    function func() {
+                        jQuery("#form-serviceSubmit").attr("value", "Отправить");
+                        jQuery("#form-serviceSubmit").css({"background-image": "none"});
+                    }
+                }
+//                                            alert(data);
+            },
+
+            error: function (data) {
+                jQuery("#form-serviceSubmit").attr("value", "Произошла ошибка");
+                jQuery("#form-serviceSubmit").css({"background-image": "none"});
+
+                setTimeout(func, 3000);
+
+                function func() {
+                    jQuery("#form-serviceSubmit").attr("value", "Отправить");
+                    jQuery("#form-serviceSubmit").css({"background-image": "none"});
                 }
             }
         });

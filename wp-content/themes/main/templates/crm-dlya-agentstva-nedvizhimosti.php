@@ -9,7 +9,7 @@ get_header();
         <div class="uslugi-content">
             <div class="rasdel-title">
                 <div class="container">
-                    <div class="back"><a href="../index.html"><span class="ico">
+                    <div class="back"><a href="/"><span class="ico">
           <img src="<?= get_template_directory_uri() ?>/i/ico-back.png">
           </span> <span class="text">Назад</span></a></div>
                     <h1 class="margin-0">
@@ -82,7 +82,7 @@ get_header();
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-2">
                                 <div class="h2 title">Помощь и 14 дней бесплатно</div>
                                 <div class="form-services">
-                                    <form method="post" action="https://at4b.ru/formservicesend.php" id="form-services">
+                                    <form method="post" enctype="multipart/form-data" action="/" id="form-services">
                                         <input type="hidden" name="titlemodal" value="Помощь и 14 дней бесплатно">
                                         <div class="form-group name">
                                             <label for="formservicename">Имя<span class="text-danger">*</span></label>
@@ -96,14 +96,15 @@ get_header();
                                             <label for="formserviceemail">E-mail</label>
                                             <input type="text" class="form-control" name="email" id="formserviceemail" data-inputmask="'alias': 'email'">
                                         </div>
+                                        <input type="hidden" name="sendto" value="<?= get_field('footer_email_for_request', 'options'); ?>">
                                         <p class="notice"><span class="text-danger">*</span> обязательное поле</p>
                                         <div class="form-group div-btn-enter">
-                                            <button class="btn btn-block btn-lg btn-warning btn-submit" id="form-serviceSubmit">Попробовать бесплатно</button>
+                                            <input type="submit" class="btn btn-block btn-lg btn-warning btn-submit" id="form-serviceSubmit" value="Попробовать бесплатно">
                                         </div>
                                         <div class="form-group agreement">
                                             <label>
-                                                <input id="formserviceagreement" name="agreement" value="1" checked="checked" type="checkbox">
-                                                Я прочитал и принимаю <a href="../../politika/index.html" title="Условия политики конфиденциальности" target="_blank">Условия политики конфиденциальности</a></label>
+                                                <input required id="formserviceagreement" name="agreement" value="1" checked="checked" type="checkbox">
+                                                Я прочитал и принимаю <a href="<?= get_permalink(291)?>" title="Условия политики конфиденциальности" target="_blank">Условия политики конфиденциальности</a></label>
                                         </div>
                                     </form>
                                 </div>
