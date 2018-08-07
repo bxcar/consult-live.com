@@ -1,4 +1,4 @@
-.navbar-collapse,
+/*.navbar-collapse,
 .nav.navbar-nav .btn-search-quick,
 .navbar-toggle {
     display: none;
@@ -6,4 +6,13 @@
 
 .socio-center {
     visibility: hidden;
+}*/
+
+header .contacts .adress {
+    min-height: 43px;
+}
+
+.nav.navbar-nav .btn-search-quick,
+.search-quick-mobile{
+    display: none;
 }

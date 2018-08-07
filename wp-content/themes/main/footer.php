@@ -60,7 +60,7 @@
                 <div class="social-links">
           <span class="icons">                         <span class="item vk"> <span class="fa-stack fa-lg"><a
                               href=<?php the_field("footer_vk_link", "option"); ?>" target="_blank" rel="nofollow"> <i
-                                  class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-vk fa-stack-1x fa-inverse"></i> </a></span> </span>
+                              class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-vk fa-stack-1x fa-inverse"></i> </a></span> </span>
                         <span class="item facebook"> <span class="fa-stack fa-lg"><a
                                         href="<?php the_field("footer_fb_link", "option"); ?>" target="_blank" rel="nofollow"> <i
                                             class="fa fa-circle fa-stack-2x"></i> <i
@@ -71,18 +71,15 @@
             <div class="socio-center">
 
                 <div class="menu-bottom">
-                    <ul>
-                        <li class=""><a href="about/index.html">О компании</a></li>
-                        <li class=""><a href="services/index.html">Отраслевые CRM</a></li>
-                        <li class=""><a href="funktsii-crm/index.html">Функции CRM</a></li>
-                        <li class=""><a href="price/index.html">Цены</a></li>
-                        <li class=""><a href="reviews/index.html">Отзывы</a></li>
-                        <li class=""><a href="parthers/index.html">Партнеры</a></li>
-                        <li class=""><a href="contacts/index.html">Контакты</a></li>
-                        <li class=""><a href="karta-sayta/index.html">Карта сайта</a></li>
-                        <li class=""><a href="politika/index.html">Политика конфиденциальности</a></li>
-                        <li class=""><a href="articles/index.html">Статьи</a></li>
-                    </ul>
+                    <?php
+                    echo str_replace(array('', ''), array('', ''), wp_nav_menu(array(
+                            'echo' => false,
+                            'theme_location' => 'menu-footer',
+                            'items_wrap' => '<ul>%3$s</ul>',
+                            'container' => 'false'
+                        ))
+                    );
+                    ?>
                 </div>
             </div>
             <div class="socio-right">
@@ -153,12 +150,30 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123265896-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-123265896-1');
+    gtag('config', 'UA-123265896-1');
 </script>
+<script>
+    jQuery('#navbar > ul > .menu-item-has-children > a').append('<span class="btn dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span>');
+    jQuery('#navbar > ul > .menu-item-has-children > a').on('click', ".dropdown-toggle", function(e) {
+        e.preventDefault();
+        jQuery(this).parent().parent().toggleClass('open');
+    });
+</script>
+<style>
+    .navbar-nav>li>a {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar-nav>li>a .btn {
+        position: relative;
+        z-index: 2;
+    }
+</style>
 </body>
 
 <!-- Mirrored from at4b.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Aug 2018 06:36:52 GMT -->

@@ -413,7 +413,16 @@
                         </div>
 
                         <div id="navbar" class="navbar-collapse ">
-                            <ul class="nav navbar-nav navbar-right">
+                            <?php
+                            echo str_replace(array('sub-menu', 'menu-item-has-children'), array('dropdown-menu', 'menu-item-has-children dropdown-1293'), wp_nav_menu(array(
+                                    'echo' => false,
+                                    'theme_location' => 'menu-1',
+                                    'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+                                    'container' => 'false'
+                                ))
+                            );
+                            ?>
+                            <!--<ul class="nav navbar-nav navbar-right">
                                 <li class="">
                                     <a href="about/index.html">
                                         О компании
@@ -596,7 +605,7 @@
                                         Контакты
                                     </a>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </div><!--/.nav-collapse --> </div>
                     <!--/.nav-collapse -->
                 </div>
